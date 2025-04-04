@@ -1,21 +1,20 @@
 # FizzBuzz
 
-**TODO: Add description**
+Uma implementação funcional do clássico problema FizzBuzz em Elixir, demonstrando os principais conceitos de programação funcional.
 
-## Installation
+## 📋 Funcionalidades praticadas
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `fizz_buzz` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:fizz_buzz, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/fizz_buzz>.
-
+- **Princípios da Programação Funcional**: Funções puras, imutabilidade e composição de funções
+- **Pattern Matching**: Lógica condicional elegante para extração de valores
+  - Usado nas heads de função para determinar os casos FizzBuzz.
+  - Lida com diferentes tipos de retorno (átomos vs números).
+- **Guards**: Restrições para cláusulas de funções
+  - Condições adicionais para verificar divisibilidade.
+  - Garante que apenas inteiros sejam processados.
+- **Pipe Operator**: Pipelines de transformação de dados
+  - Encadeia leitura de arquivo, parsing e transformação.
+  - Cria pipelines de dados legíveis.
+- **Módulo Enum**: Processamento de coleções
+  - Enum.map/2 para transformações elemento por elemento.
+  - Enum.join/2 para formatação de mensagens de erro.
+- **Tratamento de Erros**: Tuplas explícitas de sucesso/erro
